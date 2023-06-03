@@ -93,9 +93,8 @@ def register():
             return redirect("/register")
 
         try:
-<<<<<<< HEAD
-            db.execute("INSERT INTO users (username, password, email) VALUES (?,?,?)", username, generate_password_hash(password), email)
 
+            db.execute("INSERT INTO users (username, password, email) VALUES (?,?,?)", username, generate_password_hash(password), email)
             return redirect("/")
         except:
             flash("The account is already exsist, please try other user name")
@@ -156,11 +155,8 @@ def send_email():
         mail.send(msg)
         return redirect("/")
 
-<<<<<<< HEAD
 
-=======
 print(flask.__version__)
->>>>>>> ad7b632a8c8a35ea013b6028821ee79700fd54cf
 
 
 
