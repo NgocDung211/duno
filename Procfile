@@ -1,1 +1,1 @@
-    web: gunicorn DuNo.wsgi
+    web: gunicorn Duno.wsgi
